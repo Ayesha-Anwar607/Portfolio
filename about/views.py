@@ -20,3 +20,7 @@ def about(request):
 
 def  extra(request):
     return render(request , "about/extra.html")
+
+
+def error(request):
+    return render(request,"about/error.html")
