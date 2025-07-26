@@ -1,0 +1,132 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content = "Ayesha Anwar is a AI Reasercher , part of The Wise Sapiens , a non-profit organization fostering enligthment and knowledge sharing. She is a passionate AI researcher, dedicated to advancing the field through innovative projects and collaborations. With a focus on ethical AI development, he aims to create impactful solutions that benefit society." />
+  <meta name="keywords" content="Ayesha, AI Researcher, The Wise Sapiens, Non-profit, Enlightenment, Artifical Intelligence, Machine Learning,Author, Innovative Projects, Data Science Student, projects, certifications, resume, extracurricular" />
+  <meta name="author" content="Mohsin Ramzan" />
+
+  {% comment %} Open graph Meta Tags for the media sharing {% endcomment %}
+
+  <meta property="og:title" content="Ayesha | Portfolio">
+<meta property="og:description" content="Explore Mohsin's work in AI, Django, and STEM education.">
+<meta property="og:image" content="https://mohsin-jade.vercel.app/static/about/Ayesha.png">
+<meta property="og:url" content="https://mohsin-jade.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <title>{% block title %}{% endblock title %}</title>
+  <link rel="icon" href="{% static 'about/Ayesha1.png' %}" type="image/png" />
+  <link rel="stylesheet" href="{% static "about\syles.css" %}" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  {% block css %}{% endblock css %}
+
+</head>
+<body >
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Ayesha Anwar</div>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+     
+      
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="{% url "home" %}">Home</a></li>
+        <li><a href="{% url "about" %}">About</a></li>
+        <li><a href="{% url "projects" %}">Projects</a></li>
+        <li><a href="{% url "publications" %}">Publications</a></li>
+        <li><a href="{% url "blogs" %}">Blogs</a></li>
+        <li><a href="{% url "extra" %}">Endeavours</a></li>
+
+        
+        
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+{% block body %}
+
+
+
+{% endblock body %}
+  
+  <footer class="footer">
+    <div class="footer-container" data-aos="fade-up" data-aos-delay="250">
+  
+      <!-- Logo + Name -->
+      <div class="footer-left">
+        <img src="{% static 'about/Ayesha.png' %}" alt="Ayesha Logo" class="footer-logo" />
+        <h2 class="footer-name">Ayesha</h2>
+      </div>
+  
+      <!-- Email Section -->
+      <div class="footer-center">
+        <p class="footer-email-label">Got a project in mind?</p>
+        <a href="mailto:hayesha1744@gmail.com" class="footer-email-box">
+          <span>hayesha1744@gmail.com</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="mail-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.12l7.39 6.29a1 1 0 001.22 0L20 8.12V18H4z" />
+          </svg>
+        </a>
+      </div>
+  
+      <!-- Social Links -->
+      <div class="footer-right">
+        <a href="https://github.com/Ayesha-Anwar607" title="GitHub" target="_blank">
+          <img src="https://img.icons8.com/?size=140&id=iEBcQcM9rnZ9&format=png&color=000000" />
+        </a>
+        <a href="https://huggingface.co/mohsinramzan" title="Hugging Face" target="_blank">
+          <img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png" />
+        </a>
+        <a href="https://scholar.google.com/citations?user=" title="Google Scholar" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" />
+        </a>
+        <a href="https://www.researchgate.net/profile/" title="ResearchGate" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" />
+        </a>
+        <a href="https://www.kaggle.com/mohsinwarind" title="Kaggle" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" />
+        </a>
+        <a href="https://leetcode.com/u/mohsinramzan/" title="LeetCode" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" />
+        </a>
+        <a href="https://www.instagram.com/writtenbymohsin/" title="Instagram" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" />
+        </a>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 . Coded with love by <a href="https://mohsin-jade.vercel.app/" target="_blank" style="color: none ; text-decoration: none">Mohsin</a> for Ayesha</p>
+    </div>
+  </div>
+  </footer>
+  
+  <script src="{% static 'about/script.js' %}"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+{% block js %}{% endblock js %}
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "about/base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'about/about.css' %}">
+{% endblock css %}
+
+{% block body %}
+
+<section class="about-me-section">
+  <div class="about-flex-wrapper">
+    <div class="image-wrapper">
+      <img src="{% static 'about/Ayesha.png' %}" class="profile-image" alt="Profile Image">
+    </div>
+    <div class="about-me-container">
+      <div class="about-text">
+        <h2 class="about-heading">Hi, I’m <span class="name">Ayesha</span></h2>
+        <p class="about-description">
+          an undergraduate student majoring in Data Science at KFUEIT.
+          <br>
+Currently exploring the intricate realms of Machine Learning, Artificial Intelligence, and Databases—one model and one dataset at a time.
+          <br> 
+          I’ve completed the Machine Learning Specialization by Andrew Ng and a course in Version Control, giving me a solid foundation in Git, supervised & unsupervised learning, and real-world ML applications like recommender systems.
+
+          <br>
+My recent research on prostate cancer detection using machine learning has been submitted to BMC Medical Informatics and Decision Making (Springer Nature) and is currently under review.
+<br>
+I'm also part of The Wise Sapiens, an open science community promoting critical thinking and STEM education.
+<br>
+When I’m not coding or writing papers, I’m likely immersed in books, Urdu poetry, or riding the emotional rollercoaster of a good Netflix series.
+<br>
+I'm not just building projects—I'm trying to understand the stories data is trying to tell
+
+        
+</p>
+</div>
+<div class="about-buttons">
+  <a href="{% static 'docs/your_cv.pdf' %}" class="btn btn-primary" download>📄 Download CV</a>
+  <a href="mailto:mohsinramzan999@gmail.com" class="btn btn-secondary">✉️ Contact Me</a>
+  </div>
+</div>
+
+</div>
+
+<!-- Buttons -->
+
+</section>
+  
+{% endblock body %}
